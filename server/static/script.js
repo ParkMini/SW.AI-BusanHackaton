@@ -1,42 +1,48 @@
-function humanDetection() {
+function noDetection() {
   $.ajax({
-    url: "./humanDetection",
-    method: "GET",
+    url: `./noDetection`,
+    method: `GET`,
   });
 }
 
-function objectDetection() {
+function humanDetection(name) {
   $.ajax({
-    url: "./objectDetection",
-    method: "GET",
+    url: `./humanDetection/${name}`,
+    method: `GET`,
   });
 }
 
-function busNumDetection() {
+function crashDetection() {
   $.ajax({
-    url: "./busNumDetection",
-    method: "GET",
+    url: `./crashDetection`,
+    method: `GET`,
+  });
+}
+
+function busNumDetection(num) {
+  $.ajax({
+    url: `./busNumDetection/${num}`,
+    method: `GET`,
   });
 }
 
 function dotDetection() {
   $.ajax({
-    url: "./dotDetection",
-    method: "GET",
+    url: `./dotDetection`,
+    method: `GET`,
   });
 }
 
 function manyHumanDetection() {
   $.ajax({
-    url: "./manyHumanDetection",
-    method: "GET",
+    url: `./manyHumanDetection`,
+    method: `GET`,
   });
 }
 
 function useDayDetection() {
   $.ajax({
-    url: "./useDayDetection",
-    method: "GET",
+    url: `./useDayDetection`,
+    method: `GET`,
   });
 }
-
