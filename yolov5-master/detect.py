@@ -204,7 +204,8 @@ def run(
                     vid_writer[i].write(im0)
 
         # Print time (inference-only)
-        LOGGER.info(f"{dt[1].dt * 1E3:.1f}ms | {s if len(det) else 'Nothing.'}")
+        # LOGGER.info(f"{dt[1].dt * 1E3:.1f}ms | {s if len(det) else 'Nothing.'}")
+        LOGGER.info(f"{s if len(det) else 'Nothing.'}")
 
     # Print results
     t = tuple(x.t / seen * 1E3 for x in dt)  # speeds per image
